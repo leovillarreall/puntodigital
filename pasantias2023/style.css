@@ -1,0 +1,45 @@
+body{
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(111,208,236,1) 100%);  
+    font-family:sans-serif;
+    padding: 0;
+    margin: 0;
+}
+header img{
+    max-width: 100px;
+    padding-left: 20px;
+    
+}
+header nav h1{
+    color: rgb(17, 119, 207);
+    text-align: center;
+}
+.hero img{
+    max-width: 150px;
+    float: left;
+    margin: 7px;
+    border-radius: 20px;
+    
+
+}
+.hero button a{
+    text-decoration: none;
+    color: black;
+}
+.hero button{
+    border: 0;
+    margin-left: 700px;
+    background-color: rgb(141, 221, 221);
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    font-size: 15px;
+}
+.hero h2{
+    font-size: 20px;
+    color: rgb(31, 169, 255);
+}
+
+
+
+
