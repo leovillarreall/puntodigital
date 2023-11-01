@@ -1,0 +1,70 @@
+/* Estilos para el encabezado */
+header {
+    background-color: #3498db; /* Fondo gris suave */
+    color: #fff; /* Texto oscuro */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #e1e1e1; /* Borde inferior sutil */
+}
+
+header h1 {
+    font-family: 'Georgia', serif; /* Fuente elegante */
+    font-size: 36px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f4f4f4; /* Color celeste */
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #f4f4f4; /* Fondo gris suave */
+    color: #333; /* Texto oscuro */
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #e1e1e1; /* Borde superior sutil */
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* Blanco */
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos adicionales para elementos delicados */
+.main-content {
+    background-color: #fff; /* Fondo blanco para el contenido principal */
+    border: 1px solid #e1e1e1; /* Borde sutil */
+    border-radius: 10px; /* Bordes redondeados para un aspecto delicado */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Sutil sombra */
+}
+
+/* Estilos para elementos decorativos */
+.decorative-element {
+    font-size: 28px;
+    color: #3498db; /* Color celeste */
+    text-align: center;
+    font-family: 'cursive', sans-serif;
+    margin: 20px 0;
+}
