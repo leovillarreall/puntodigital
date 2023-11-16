@@ -15,7 +15,6 @@ if ($conn->connect_error) {
 if (isset($_POST['agregar_curso'])) {
     $nombre = $conn->real_escape_string($_POST['nombre']);
     $descripcion = $conn->real_escape_string($_POST['descripcion']);
-    $cupo_maximo = $_POST['cupo_maximo'];
     $profesor = $conn->real_escape_string($_POST['profesor']);
     $modalidad = $conn->real_escape_string($_POST['modalidad']);
     $edad_minima = $_POST['edad_minima'];
@@ -26,7 +25,7 @@ if (isset($_POST['agregar_curso'])) {
     $fecha_fin = $_POST['fecha_fin'];
     $clases = $_POST['clases'];
 
-    $sql = "INSERT INTO cursos (nombre, descripcion, cupo_maximo, profesor, modalidad, edad_minima, edad_maxima, hora_inicio, hora_fin, fecha_inicio, fecha_fin, clases) VALUES ('$nombre', '$descripcion', $cupo_maximo, '$profesor', '$modalidad', $edad_minima, $edad_maxima, '$hora_inicio', '$hora_fin', '$fecha_inicio', '$fecha_fin', $clases)";
+    $sql = "INSERT INTO cursos (nombre, descripcion, profesor, modalidad, edad_minima, edad_maxima, hora_inicio, hora_fin, fecha_inicio, fecha_fin, clases) VALUES ('$nombre', '$descripcion', '$profesor', '$modalidad', $edad_minima, $edad_maxima, '$hora_inicio', '$hora_fin', '$fecha_inicio', '$fecha_fin', $clases)";
     
     if ($conn->query($sql) === TRUE) {
         echo "Curso agregado con éxito.";
@@ -49,7 +48,7 @@ $conn->close();
     <form method="post">
         <input type="text" name="nombre" placeholder="Nombre del curso" required><br>
         <textarea name="descripcion" placeholder="Descripción" required></textarea><br>
-        <input type="number" name="cupo_maximo" placeholder="Cupo máximo" required><br>
+        <!-- Eliminado el campo para el cupo máximo -->
         <input type="text" name="profesor" placeholder="Profesor" required><br>
         <select name="modalidad" required>
             <option value="presencial">Presencial</option>
