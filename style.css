@@ -1,91 +1,35 @@
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-}
-
-.form-container {
-    background-color: #0cb7f2;
-    color: #fff;
-    padding: 20px;
-    border-radius: 20px;
-    text-align: center;
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.form-container label {
-    display: block;
-    margin: 10px 0;
-    color: #fff;
-    text-align: center;
-}
-
-.form-container input[type="text"],
-.form-container input[type="date"],
-.form-container input[type="time"] {
-    background-color: #fff;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     color: #333;
-    padding: 5px;
-    border: none;
-    border-radius: 3px;
-    text-align: center;
-    margin: 5px auto;
-    display: block;
-    width: 80%;
-}
-
-.form-container input[type="submit"] {
-    background-color: #010405;
-    color: #1bd8e6;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    display: block;
-    margin: 20px auto;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
+    color: #007bff;
     text-align: center;
-}
-/* Estilo para mensajes de éxito */
-.success-message {
-    color: #0cb7f2; /* Color celeste */
-    font-weight: bold;
-    text-align: center;
-    margin-top: 20px;
-    font-size: 18px;
 }
 
-/* Estilo para mensajes de error */
-.error-message {
-    color: #f20c0c; /* Color rojo */
-    font-weight: bold;
-    text-align: center;
-    margin-top: 20px;
-    font-size: 18px;
+ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-/* Estilo para el botón de Descargar Comprobante */
-.custom-button {
-    background-color: #010405;
-    color: #1bd8e6;
-    padding: 10px 20px;
+li {
+    margin: 10px 0;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    display: inline-block;
-    text-decoration: none; /* Agregamos esto para que el enlace no se subraye */
 }
 
-/* Centrar el botón horizontalmente */
-.center-button {
-    text-align: center;
-    margin-top: 20px;
+button:hover {
+    background-color: #0056b3;
 }
+
